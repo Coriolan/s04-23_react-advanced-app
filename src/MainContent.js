@@ -1,16 +1,13 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
-import Navbar from './Navbar';
 
-export default function Layout(props) {
+export default function MainContent() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div>
-      <div className={`header ${theme}`}>
-        <Navbar />
-      </div>
-      {props.children}
+    <div class={`content ${theme}`}>
+      <h1>Welcome to my app</h1>
+      <p>Use Context API to share data between components.</p>
     </div>
   );
 }

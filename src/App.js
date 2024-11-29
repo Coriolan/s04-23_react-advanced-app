@@ -1,6 +1,7 @@
 import './App.css';
 import Counter from './Counter';
 import Layout from './Layout';
+import MainContent from './MainContent';
 import NewCounter from './NewCounter';
 import NewUserInfo from './NewUserInfo';
 import UserInfo from './UserInfo';
@@ -12,7 +13,9 @@ function App() {
       <NewCounter />
       <UserInfo />
       <NewUserInfo />
-      <Layout />
+      <Layout>
+        <MainContent />
+      </Layout>
     </div>
   );
 }

@@ -26,3 +26,13 @@ code {
   background-color: #101010;
   color: #e0e0e0;
 }
+
+.header {
+  padding: 10px;
+}
+
+.content {
+  width: 500px;
+  padding: 50px;
+  margin: 50px auto;
+}
