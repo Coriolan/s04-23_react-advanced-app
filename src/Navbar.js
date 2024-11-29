@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from './ThemeContext';
-import Navbar from './Navbar';
 
-export default function Layout() {
+export default function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <div className={theme}>
-      <Navbar />
+    <div className='row'>
+      <div>React Context App</div>
+      <button onClick={toggleTheme}>Toggle Theme</button>
     </div>
   );
 }
